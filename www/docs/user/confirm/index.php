@@ -29,10 +29,10 @@ if (get_http_var('welcome') == 't') {
 
     <p>Welcome to TheyWorkForYou! You are now logged in.</p>
 
-    <p><strong>TheyWorkForYou</strong> helps make sense of everything that goes on in Parliament: debates, divisions, committees and questions.</p>
+    <p><strong>TheyWorkForYou</strong> helps make sense of the goings on in Parliament: debates, divisions, committees and questions.</p>
 
     <p>You can use it to keep an eye on your MP, Peers, or any of the other representatives we cover: see what speeches they make, how they vote, and check how well you're being represented.
-        And if you have opinions about any of that? You can look for the 'Send a message' button at the top of your MP's page.</p>
+        And if you have opinions about any of that? You can look for the &lsquo;Send a message&rsquo; button at the top of your MP's page.</p>
 
     <p>If you are looking to sign up for our API, please begin by <a href="/api/key">getting a key here</a>.</p>
 
