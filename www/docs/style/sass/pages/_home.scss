@@ -92,12 +92,12 @@
     }
 }
 
-.hero-after-promo {
+.promo-banner + .hero {
     // Makes hero container width instead of full width,
     //  when promo banner is displayed
     margin-top: 3em;
     background-color: transparent;
-    &__row {
+    .hero__row {
         background-color: $primary-color;
     }
 

@@ -3,19 +3,6 @@
     color: #ffffff;
 }
 
-.promo-banner__wrap {
-    span {
-        color: #e4e2dc;
-    }
-    .promo-banner__more-link {
-        color: #fff;
-        font-weight: 600;
-        &:hover {
-            opacity: 0.66;
-        }
-    }
-}
-
 .promo-banner__container {
     @include grid-column(12);
     padding: 1em 1em 2em;
@@ -26,6 +13,7 @@
     }
     @media (min-width: $large-screen) {
         @include grid-column(7);
+        padding-bottom: 0;
     }
 
     label {
@@ -50,9 +38,30 @@
     }
 }
 
-.promo-banner__img {
+.promo-banner__wrap {
+    padding-right: 0;
+    span {
+        color: #e4e2dc;
+    }
+    .promo-banner__more-link {
+        color: #fff;
+        font-weight: 600;
+        &:hover {
+            opacity: 0.66;
+        }
+    }
+
+    @media (min-width: $large-screen) {
+        padding-right: 2em;
+    }
+}
+
+.promo-banner--img {
     display: none;
     @media (min-width: $large-screen) {
+        @include grid-column(5);
+        padding-left: 0;
+        padding-right: 0;
         display: block;
     }
 }

@@ -1,7 +1,7 @@
 <?php include 'homepage/promo-banner.php'; ?>
 
-<div class="hero hero-after-promo">
-    <div class="row hero-after-promo__row">
+<div class="hero">
+    <div class="row hero__row">
     <div class="hero__mp-search">
         <div class="hero__mp-search__wrap">
             <?php if (count($mp_data)) { ?>

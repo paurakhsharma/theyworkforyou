@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="promo-banner__img">
+        <div class="promo-banner--img">
             <img src="style/img/promo-banner-image.png" alt="">
         </div>
     </div>
