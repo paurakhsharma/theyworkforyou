@@ -1,0 +1,149 @@
+.hero-api, .intro, .example-api {
+    color: $white-text;
+
+    h1, h2 {
+        color: $white-text;
+    }
+}
+
+.hero-api {
+    background-color:$body-bg-dark;
+    .hero-api__container {
+        @include grid-column(12);
+        
+    }
+}
+
+.intro {
+    background-color: $body-bg-dark;
+    .intro__col {
+        @include grid-column(12);
+
+        @media (min-width: $medium-screen) {
+            @include grid-column(3);
+        }
+    }
+}
+
+.simple-api {
+    .simple__col {
+        @include grid-column(6);
+    }
+}
+
+.example-api {
+    background-color:$body-bg-dark;
+    text-align: center;
+    padding: ($padding * 2) ($padding / 2);
+
+    .row {
+        .example-api__col {
+            margin-bottom: ($margin *6);
+
+            &:nth-child(1) {
+                margin-top: ($margin * 2);
+            }
+
+            &:nth-last-child(1) {
+                margin-bottom: ($margin * 2);
+            }
+
+            @media (min-width: $medium-screen) {
+                margin-bottom: 0;
+
+                &:nth-child(1) {
+                    margin-top: 0;
+                }
+    
+                &:nth-last-child(1) {
+                    margin-bottom: 0;
+                }
+            }
+
+        }
+    }
+
+    .example-api__col {
+        
+        @include grid-column(12);
+
+        .input-header, .input-body {
+            border: 1px solid $borders;
+            border-radius: 4px;
+            background-color: $body-bg-darker;
+        }
+
+        .input {
+            .input-header, .input-body {
+                padding: ($padding / 2) $padding;
+                p {
+                    display: inline;
+                    vertical-align: center;
+                }
+            }
+
+            .input-body {
+                margin-top: -8px;
+            }
+        }
+
+        @media (min-width: $medium-screen) {
+            @include grid-column(3);
+        }
+    }
+}
+
+.input-footer--mobile {
+    display: block;
+    border-bottom: 1px solid $borders;
+    padding-top: ($padding *2);
+
+    @media (min-width: $medium-screen) {
+        display: none;
+    }
+}
+
+.input-footer--desktop {
+    display: block;
+    text-align: left;
+    border-top: 1px solid $borders;
+    padding-top: ($padding *2);
+    margin-top: ($margin *2);
+
+    @media (max-width: $medium-screen) {
+        display: none;
+    }
+}
+
+.hide-from-medium {
+    @media (max-width: $medium-screen) {
+        display: none;
+    }
+}
+
+.projects {
+    background-color: #ffffff;
+
+    .projects__col {
+        @include grid-column(12);
+
+        @media (min-width: $medium-screen) {
+            @include grid-column(3);
+        }
+    }
+}
+
+.quote-block {
+    background-color: $secondary-color;
+    color: $white-text;
+}
+
+.get-started {
+    ul {
+        margin: 0;
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        column-gap: 1em;
+    }
+}

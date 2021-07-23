@@ -100,10 +100,10 @@ function api_documentation_front($method, $explorer) {
         api_documentation_explorer($method, $explorer);
     }
 
-    $subscription = new MySociety\TheyWorkForYou\Subscription($THEUSER);
-    $sidebar = api_sidebar($subscription);
-    $PAGE->stripe_end(array($sidebar));
-    $PAGE->page_end();
+    // $subscription = new MySociety\TheyWorkForYou\Subscription($THEUSER);
+    // $sidebar = api_sidebar($subscription);
+    // $PAGE->stripe_end(array($sidebar));
+    // $PAGE->page_end();
 }
 
 function api_documentation_explorer($method, $explorer) {
