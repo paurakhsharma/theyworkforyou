@@ -96,7 +96,7 @@
 
     <div class="row">
         <p>To see more examples</p>
-        <a href="#" class="button">View the docs</a>
+        <a href="#" class="button">View the docs &rarr;</a>
     </div>
     
 </div>

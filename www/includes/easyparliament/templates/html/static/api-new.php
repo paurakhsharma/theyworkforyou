@@ -5,14 +5,17 @@
             <p class="lead">
             for your web project, campaign, research or news story 
             </p>
-            <button class="button">Sign up</button>
+            <button class="button">Sign up &rarr;</button>
         </div>
     </div>
 </div>
 
 <div class="intro">
     <div class="row">
-        <h2>Do you need to&hellip;</h2>
+        <div class="intro__header">
+            <h2>Do you need to&hellip;</h2>
+        </div>
+        
         <div class="intro__col">Display tailored content that reflects which constituency a user is in?</div>
         <div class="intro__col">Analyse spoken parliamentary debates, in bulk?</div>
         <div class="intro__col">Publish accurate information about MPs, MLAs or MSPs?</div>
@@ -21,30 +24,48 @@
 </div>
 
 <div class="try-api">
-    <div class="row">
-        <form action="">
-            <div class="try__container">
-                <input type="text">
+    <div class="row collapse">
+        <form action="/postcode/">
+            <div class="mp-search__form">
+                <label for="postcode" class="api-search-label">Try it out - enter a postcode</label>
+                <div class="medium-4 columns">
+                    <input name="pc" id="postcode" class="homepage-search__input" type="text" />
+                </div>
+                <div class="medium-3 columns">
+                    <input type="submit" value="Search &rarr;" class="button homepage-search__button" />
+                </div>
             </div>
+
         </form>
     </div>
 </div>
 
 <div class="simple-api">
     <div class="row">
-        <div class="simple__col">
-            <p>An easy way to access data from the UK's parliaments and regional assemblies</p>
+        <div class="simple-api__header text-center">
+            <h2>TheyWorkForYou's API makes it all much simpler</h2>
         </div>
-        <div class="simple__col">
-            <p>Self-service subscription: manage keys and payments online</p>
+    
+        <div class="medium-6 columns">
+            <i class="simple-api__icon medium-3 small-3 columns"><img src="/style/img/api-page/icon-data.svg" alt=""></i>    
+            <p class="medium-9 small-9 columns">An easy way to access data from the UK's parliaments and regional assemblies</p>
+        </div>
+        <div class="medium-6 columns">
+            <i class="simple-api__icon medium-3 small-3 columns"><img src="/style/img/api-page/icon-self-service.svg" alt=""></i>    
+            <p class="medium-9 small-9 columns">Self-service subscription: manage keys and payments online</p>    
+        
         </div>
     </div>
     <div class="row">
-        <div class="simple__col">
-            <p>Adjust your quota as you need it, or cancel at any time</p>
+        <div class="medium-6 columns">
+            <i class="simple-api__icon medium-3 small-3 columns"><img src="/style/img/api-page/icon-quota.svg" alt=""></i>    
+            <p class="medium-9 small-9 columns">Adjust your quota as you need it, or cancel at any time</p>    
+        
         </div>
-        <div class="simple__col">
-            <p>Reduced rates/free of charge for non-profit or charitable projects</p>
+        <div class="medium-6 columns">
+            <i class="simple-api__icon medium-3 small-3 columns"><img src="/style/img/api-page/icon-rates.svg" alt=""></i>    
+            <p class="medium-9 small-9 columns">Reduced rates/free of charge for non-profit or charitable projects</p>    
+        
         </div>
     </div>
 
@@ -82,32 +103,36 @@
             <p>British Canoeing's Clear Waters campaign encourages supporters to sign a petition and then displays on a map how many have signed from each constituency.</p>
             <p>See it in action</p>
             <img src="/style/img/api-page/british-canoeing-screenshot.png" alt="">
-            <img src="/style/img/api-page/british-canoeing-logo.png" alt="">
+            <img src="/style/img/api-page/british-canoeing-logo.png" class="projects-logo" alt="">
         </div>
         <div class="projects__col">
             <p>The Centre for Analysis of Risk and Regulation (CARR) analysed parliamentary speeches over 50 years as part of their research into whether there had been a rise in the use of statistics and numbers in political discourse.</p>
             <p>See it in action</p>
             <img src="/style/img/api-page/carr-screenshot.png" alt="">
-            <img src="/style/img/api-page/carr-logo.png" alt="">
+            <img src="/style/img/api-page/carr-logo.png" class="projects-logo" alt="">
         </div>
         <div class="projects__col">
             <p>Carbon Brief looked into the use of the phrases "climate change", "global warming" and "greenhouse effect" by different political parties as well as individual MPs for this longform analysis.</p>
             <p>See it in action</p>
             <img src="/style/img/api-page/CarbonBrief-screenshot.png" alt="">
-            <img src="/style/img/api-page/CarbonBrief-logo.png" alt="">
+            <img src="/style/img/api-page/CarbonBrief-logo.png" class="projects-logo" alt="">
         </div>
         <div class="projects__col">
             <p>Money Advice Trust's StopTheKnock campaign used the API as one piece of the code behind this map project, showing the number of times council bailiffs were sent to collect on debts within each area.</p>
             <p>See it in action</p>
             <img src="/style/img/api-page/stop-the-knock-screenshot.png" alt="">
-            <img src="/style/img/api-page/stop-the-knock-logo.png" alt="">
+            <img src="/style/img/api-page/stop-the-knock-logo.png" class="projects-logo" alt="">
         </div>
     </div>
 </div>
 
 <div class="quote-block text-center">
-    <p>The API is a very useful tool that has saved us days of development work. It is the backbone to our online petition process.</p> 
-     <p> <cite>Head of Digital, British Canoeing</cite></p>
+
+    <div class="quote-wrap">
+        <p>“The API is a very useful tool that has saved us days of development work. It is the backbone to our online petition process.”</p> 
+        <p> <cite>Head of Digital, British Canoeing</cite></p>
+    </div>
+    
 </div>
 
 <div class="get-started text-center">
@@ -117,10 +142,12 @@
     </div>
 
     <div class="row">
-        <ul>
-            <li><a href="#">FAQs</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Terms and conditions</a></li>
-        </ul>
+        <div class="get-started__list-wrap">
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+            </ul>
+        </div>
     </div>
 </div>
